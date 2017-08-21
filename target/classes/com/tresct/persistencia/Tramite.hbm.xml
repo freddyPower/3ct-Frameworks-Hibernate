@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<hibernate-mapping package="com.tresct.dto">
+	<class name="Tramite" table="Tramite">
+		<!-- 	Mapping del id -->
+		<id name="idTramite" column="idTramite">
+			<generator class="native"/>
+		</id>
+		
+<!-- 		<property name="tipoTramite" type="string" column="tpTramite"/> -->
+
+<!-- 		Mapping del resto de las filas -->
+		<property name="tipoTramite" type="string" />
+		<property name="fechaTramite" type="timestamp" />
+	</class>
+</hibernate-mapping>
+
